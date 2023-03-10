@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- viewport-fit=cover for pwa theme coverage on mobile -->
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <title>PWA template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="app.webmanifest">
+    <script src="js/app.js" defer></script>
+    <!-- make sure theme works on devices that don't support Web App Manifest -->
+    <meta name="theme-color" content="#ffc252">
+    <!-- for devices that won't get icon from Web App Manifest -->
+    <link rel="apple-touch-icon" href="icons/icon-512.png">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Progressive Web App Starter Template</h1>
+    </header>
+    <main>
+        <section>
+            <button type="button" id="notifications">Request Dummy Notifications</button>
+        </section>
+        <section id="installContainer" class="hidden">
+            <button type="button" id="install-button">Install</button>
+        </section>
+
+    </main>
+    <footer>
+        PWA template is created by Cameron Tharp. See the code here:
+        <a href="https://github.com/Ctharp11/pwa-template">Github link</a>
+    </footer>
+
+</body>
+</html>

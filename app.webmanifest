@@ -1,0 +1,24 @@
+{
+    "name": "Progressive Web App Starer Template",
+    "short_name": "PWA Starter",
+    "start_url": "./",
+    "orientation": "landscape",
+    "theme_color": "#ffc252",
+    "background_color": "white",
+    "scope": "./",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "icons/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/maskable-icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ]
+  }
+  
