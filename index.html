@@ -15,19 +15,26 @@
 </head>
 <body>
     <header>
-        <h1>Progressive Web App Starter Template</h1>
+        <img src="icons/icon-512.png" alt="Progressive Web Apps Starter Template" class="header-image" />
+        <h4>Dive into the code to start your PWA.</h4>
     </header>
     <main>
         <section>
-            <button type="button" id="notifications">Request Dummy Notifications</button>
+            To learn more about Progressive Web Apps, try these tutorials:
+            <div><a href="https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/">Microsoft Learning</a></div>
+            <div><a href="https://web.dev/learn/pwa/">Web Dev</a></div>
+            <div><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps">MDN Web Docs</a></div>
         </section>
-        <section id="installContainer" class="hidden">
-            <button type="button" id="install-button">Install</button>
+
+        <section class="notifications">
+            <div class="notifications-text">You can send notifications from your OS in a web browser. Click the button to see a random quote. How cool!</div>
+            <div class="notifications-text">note: this feature is not supported on all browsers or devices.</div>
+            <button class="notifications-button" type="button" id="notifications">Request Notification</button>
         </section>
 
     </main>
     <footer>
-        PWA template is created by Cameron Tharp. See the code here:
+        This PWA template was created by Cameron Tharp. See the code here:
         <a href="https://github.com/Ctharp11/pwa-template">Github link</a>
     </footer>
 

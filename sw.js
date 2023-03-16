@@ -1,4 +1,4 @@
-const CACHE_NAME = `pwa-template-v1`;
+const CACHE_NAME = `pwa-template-v2`;
 
 const contentToCache = [
     "/",

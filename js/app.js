@@ -1,25 +1,8 @@
-
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/sw.js");
 }
   
 const notificationButton = document.getElementById("notifications");
-
-const installContainer = document.getElementById("installContainer");
-const installButton = document.getElementById("install-button");
-
-installButton.addEventListener("click", async () => {
-    const promptEvent = window.defferedPrompt;
-    console.log("promptEvent", promptEvent);
-    if (!promptEvent) {
-        return;
-    }
-    promptEvent.prompt();
-
-    const result = await promptEvent.userChoice;
-    window.defferedPrompt = null;
-
-})
   
 if (notificationButton) {
   notificationButton.addEventListener("click", () => {
