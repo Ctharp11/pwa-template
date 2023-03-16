@@ -5,6 +5,7 @@ const contentToCache = [
     "js/app.js",
     "icons/icon-512.png",
     "icons/maskable-icon-512.png",
+    "icons/favicon.ico",
     "index.html",
     "style.css",
     "https://type.fit/api/quotes",
@@ -28,6 +29,7 @@ self.addEventListener("fetch", (event) => {
       const cache = await caches.open(CACHE_NAME);
 
       const cachedResponse = await cache.match(event.request);
+      console.log("cachedResponse", cachedResponse)
       if (cachedResponse) {
         return cachedResponse;
       } else {
@@ -46,18 +48,3 @@ self.addEventListener("fetch", (event) => {
     })()
   );
 });
-
-// Initialize deferredPrompt for use later to show browser install prompt.
-let deferredPrompt;
-
-self.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent the mini-infobar from appearing on mobile
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI notify the user they can install the PWA
-  showInstallPromotion();
-  // Optionally, send analytics event that PWA install promo was shown.
-  console.log(`'beforeinstallprompt' event was fired.`);
-});
-
